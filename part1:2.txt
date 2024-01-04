@@ -1,0 +1,36 @@
+Part One:Solidify Terminology
+what is HTTP ?
+HyperText transport protocol 
+
+what is a URL ?
+Universal Resource Locator
+
+what is DNS ?
+Domain Name System
+
+what is a query string ?
+specific content in an URL request 
+
+What are two HTTP verbs and how are they different?
+GET and POST
+GET is request without side effect
+POST is request with side effect
+
+what is an HTTP request ?
+send a message to a Web server
+
+What is an HTTP response?
+a Web server sends back a corresponding page according to the request
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+HTTP header is a part of a HTTP request or response that passes additional context or metadata
+resquest headers: method, Accept-Language, 
+response headers:content-type(text/html, json), date
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+1.the browser will go search in computer cache / router / ISP / DNS, a corresponding response page will be sent back to brower if the URL is resolved, if not, an error will be sent back.
+
+Part two: Practice Tools
+1. curl -H "Accept: text/plain" "https://icanhazdadjoke.com/search?term=pirate"
+2.dig icanhazdadjoke.com +trace
+
